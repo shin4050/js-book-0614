@@ -5,10 +5,19 @@
 // コメントに「どこに書いてあるコードか」が分かるように書く。（最低でもページ数を書く）
 
 // リスト4.1 (p.79)
-function sum() {
+function sum(rangeFrom, rangeTo) {
     var total = 0;
-    for (var counter = 1; counter <= 10; counter++ ){
+    for (var counter = rangeFrom; counter <= rangeTo; counter++ ){
         total += counter;
     }
     window.alert(total);
+}
+
+// 確認テスト Q1
+function mu(rangeFrom, rangeTo) {
+    var total = 1;
+    for (var counter = rangeFrom; counter <= rangeTo; counter++){
+        total *= counter; 
+    }
+    return total;
 }
